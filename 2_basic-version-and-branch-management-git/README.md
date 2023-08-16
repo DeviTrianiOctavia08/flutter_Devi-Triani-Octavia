@@ -7,4 +7,4 @@ Mengatur versi dari source code program
 - Distributed
 
 3. Git
-Salah satu version control sistem populer yang digunakan pada developer untuk mengembangkan software secara bersamaan
+Salah satu version control sistem populer yang digunakan pada developer untuk mengembangkan software secara bersama
