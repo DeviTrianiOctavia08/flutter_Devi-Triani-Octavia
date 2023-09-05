@@ -43,4 +43,4 @@ Widget dasar untuk membangun sebuah halaman pada CupertinoApp
 Struktur
 Membentuk tata letak dasar sebuah halaman yang ditulis melalui properti-properti.
 -navigationBar : bar menu bagian atas halaman
-- child : bagian utama halaman.
+- child : bagian utama halaman..
