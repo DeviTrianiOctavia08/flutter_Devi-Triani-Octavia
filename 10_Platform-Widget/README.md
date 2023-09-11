@@ -127,4 +127,4 @@ Tips komunikasi asinkronus yang efektif
 Membuat rencana komunikasi, tingkatkan visibilitas, jadikan sebagai budaya, komunikasikan jam kerja.
 
 Qoutes : "orang bijak bicara karena dia harus bicara; orang bodoh bicara karena dia merasa ingin mengucapkan sesuatu". 
--plato..
+-plato...
