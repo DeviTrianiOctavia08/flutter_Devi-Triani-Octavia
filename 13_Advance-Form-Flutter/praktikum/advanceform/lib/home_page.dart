@@ -154,11 +154,11 @@ void _pickFile() async {
   final result = await FilePicker.platform.pickFiles();
   if(result == null) return;
 
-  final file = result.files.first;
-  _openFile(file);
+  // final file = result.files.first;
+  // _openFile(file);
 }
 
-void _openFile(PlatformFile file) {
-  OpenFile.open(file.path);
-}
+// void _openFile(PlatformFile file) {
+//   OpenFile.open(file.path);
+// }
 }
