@@ -103,4 +103,4 @@ Implementasi SQLite
 
 - (task_list_screen.dart) bungkus Widget TaskItemCard dengan Widget InkWell dan gunakan onTap dengan fungsi async. Di dalam blok fungsinya tambahkan variabel selectedTask yang menampung item.id!, Dan tambahkan navigasi ke TaskItemCard
 Full Source Code:
-https://bit.ly/3J8dinV.
+https://bit.ly/3J8dinV..
