@@ -28,45 +28,47 @@ class Page1Content extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(width: 50), // Menambahkan jarak antara gambar dan teks
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        '"Selamat Datang di Toko Kue Kami"',
-                        style: GoogleFonts.pacifico(fontSize: 36, color: Colors.white),
-                      ),
-                      const SizedBox(height: 20), // Menambahkan jarak antara teks
-                      Text(
-                        'Menerima Pesanan Birthday Cake sesuai gambar yang diinginkan atau gambar yang sudah tersedia di Toko Kami...',
-                        style: GoogleFonts.poppins(
-                          fontSize: 20,
-                          color: Colors.white,
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '"Selamat Datang di Toko Kue Kami"',
+                          style: GoogleFonts.pacifico(fontSize: 36, color: Colors.white),
                         ),
-                      ),
-                      const SizedBox(height: 20), // Menambahkan jarak antara teks
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Page2Content()),
-                          );
-                        },
-                        child: Text('Lihat Menu'),
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.orange,
-                          textStyle: GoogleFonts.poppins(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                        const SizedBox(height: 20), // Menambahkan jarak antara teks
+                        Text(
+                          'Menerima Pesanan Birthday Cake sesuai gambar yang diinginkan atau gambar yang sudah tersedia di Toko Kami...',
+                          style: GoogleFonts.poppins(
+                            fontSize: 20,
                             color: Colors.white,
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
+                        ),
+                        const SizedBox(height: 20), // Menambahkan jarak antara teks
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Page2Content()),
+                            );
+                          },
+                          child: Text('Lihat Menu'),
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.orange,
+                            textStyle: GoogleFonts.poppins(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   const SizedBox(width: 50), // Menambahkan jarak antara gambar dan teks
                 ],

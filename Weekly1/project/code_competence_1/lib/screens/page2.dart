@@ -14,7 +14,7 @@ class Page2Content extends StatelessWidget {
           children: [
             SizedBox(height: 20),
             Text(
-              'Toko Kue Mbak Devi',
+              'Pilihan Cake Birthday',
               style: GoogleFonts.poppins(fontSize: 24, color: Colors.white), // Ubah gaya teks
             ),
             SizedBox(height: 10),
