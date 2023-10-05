@@ -28,23 +28,20 @@ class OnePageScroll extends StatelessWidget {
           'Toko Kue Mbak Devi',
           style: GoogleFonts.poppins(fontSize: 24, color: Colors.white), // Ubah ukuran teks
         ),
-        backgroundColor: const Color.fromARGB(255, 236, 176, 247), // Ganti warna latar belakang
+        backgroundColor: Color.fromARGB(255, 228, 89, 252), // Ganti warna latar belakang
         elevation: 5.0,
         actions: [
           IconButton(
-            icon: Icon(
-              Icons.restaurant_menu, // Menggunakan ikon restaurant_menu
-              size: 24, // Ubah ukuran ikon sesuai keinginan
-              color: Colors.white, // Ubah warna ikon sesuai keinginan
-            ),
-            onPressed: () {
-              // Navigasi ke Page3 atau aksi lainnya
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Page3Content()),
-              );
-            },
+          icon: Icon(
+            Icons.cake, // Menggunakan ikon kue dari paket Flutter
+            size: 24, // Ubah ukuran ikon sesuai keinginan
+            color: Colors.white, // Ubah warna ikon sesuai keinginan
           ),
+          onPressed: () {
+            // Tambahkan aksi yang sesuai ketika ikon kue ditekan
+          },
+        ),
+
         ],
         centerTitle: true,
       ),
@@ -56,7 +53,7 @@ class OnePageScroll extends StatelessWidget {
               Page1Content(
                 height: MediaQuery.of(context).size.height,
               ),
-              Page2Content(),
+              // Page2Content(),
               ContactUsPage(),
               // Tambahkan tombol atau aksi untuk Page3 jika diperlukan
             ],

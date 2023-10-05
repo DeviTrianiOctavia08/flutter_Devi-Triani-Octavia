@@ -68,6 +68,9 @@ flutter:
     - image/kue5.jpg
     - image/kue6.jpg
     - image/kue7.jpg
+    - image/kue8.jpg
+    - image/kue9.jpg
+    - image/kue10.jpg
     - image/cake.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see

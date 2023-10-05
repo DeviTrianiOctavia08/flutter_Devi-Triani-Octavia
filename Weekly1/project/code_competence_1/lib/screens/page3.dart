@@ -7,7 +7,7 @@ class ContactUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(255, 220, 155, 231), // Ganti warna latar belakang
+      color: Color.fromARGB(255, 228, 89, 252), // Ganti warna latar belakang
       padding: const EdgeInsets.all(16.0),
       child: ContactForm(),
     );
@@ -145,18 +145,41 @@ class _ContactFormState extends State<ContactForm> {
                 _emailController.clear();
                 _messageController.clear();
 
-                print('Nama Depan: $firstName');
-                print('Nama Belakang: $lastName');
-                print('Email: $email');
-                print('Pesan: $message');
+                // Menampilkan alert dengan data yang dimasukkan pada form
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      title: Text('Data yang Anda Masukkan:'),
+                      content: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('Nama Depan: $firstName'),
+                          Text('Nama Belakang: $lastName'),
+                          Text('Email: $email'),
+                          Text('Pesan: $message'),
+                        ],
+                      ),
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pop(); // Menutup dialog
+                          },
+                          child: Text('Tutup'),
+                        ),
+                      ],
+                    );
+                  },
+                );
               }
             },
             child: Text('Kirim'),
             style: ElevatedButton.styleFrom(
-              primary: Colors.brown, // Warna latar belakang tombol
+              primary: Color.fromARGB(255, 197, 44, 85), // Warna latar belakang tombol
               textStyle: GoogleFonts.poppins(
                 fontSize: 18, // Ubah ukuran teks tombol
-                color: Colors.white, // Warna teks tombol
+                color: Color.fromARGB(255, 215, 148, 166), // Warna teks tombol
               ),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               shape: RoundedRectangleBorder(
@@ -164,6 +187,7 @@ class _ContactFormState extends State<ContactForm> {
               ),
             ),
           ),
+
         ],
       ),
     );
