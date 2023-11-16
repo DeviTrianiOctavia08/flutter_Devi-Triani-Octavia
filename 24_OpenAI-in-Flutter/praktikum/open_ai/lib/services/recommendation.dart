@@ -7,8 +7,9 @@ import 'package:http/http.dart' as http;
 
 class RecommendationService {
   static  Future<GptData> getRecommendation({
-    required String carRegion,
     required String budget,
+    required String camera,
+    required String strorage,
   }) async {
     late GptData gptData = GptData(
       id: "", 
@@ -28,16 +29,11 @@ class RecommendationService {
         'Authorization':'Bearer $apiKey'
       };
 
-      final formatCurrency = NumberFormat.currency(
-        locale: 'id_ID',
-        symbol: 'IDR ',
-        decimalDigits: 0,
-      );
 
-      String carBudget = formatCurrency.format(int.parse(budget));
+
 
       String promptData = 
-          "You are a car expert. Please give me a car recommendation from $carRegion manufactures with budget equals to $carBudget";
+          "Berikan Saya rekomendasi phone dengan budget $budget dan rekomendasi camera $camera dan strorage $strorage";
 
       final data = jsonEncode({
         "model":"text-davinci-003",
