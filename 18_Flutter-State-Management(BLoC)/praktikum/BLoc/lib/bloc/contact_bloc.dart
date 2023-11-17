@@ -16,11 +16,11 @@ class ContactBloc extends Bloc<ContactEvent, ContactState> {
   Stream<ContactState> mapEventToState(ContactEvent event) async* {
     if (event is AddContact) {
       // Proses logika untuk menambahkan kontak ke dalam list
-      contacts.add(event.newContact);
+      contacts.add(event.newContact as ContactData);
       yield ContactAdded(contacts); 
     } else if (event is UpdateContact) {
       
-      contacts[event.index] = event.updatedContact;
+      contacts[event.index] = event.updatedContact as ContactData;
       yield ContactUpdated(contacts); 
     } else if (event is DeleteContact) {
       
