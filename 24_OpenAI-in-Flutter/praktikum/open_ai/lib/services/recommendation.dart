@@ -9,7 +9,7 @@ class RecommendationService {
   static  Future<GptData> getRecommendation({
     required String budget,
     required String camera,
-    required String strorage,
+    required String strorage, required String storage,
   }) async {
     late GptData gptData = GptData(
       id: "", 
